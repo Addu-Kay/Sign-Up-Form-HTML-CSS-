@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Sign Up Form</title>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div class="left-side">
+        <div class="logo">
+          <img src="./odin_logo.png" alt="" />
+          odin
+        </div>
+      </div>
+      <div class="right-side">
+        <div class="box-1">
+          <h3>
+            This is not a real online service! We are the first step towards
+            turning your deepest dreams into reality. Join us and start your
+            journey today. Sign up now to get started.
+          </h3>
+          <h3 id="you-know">You know you want to.</h3>
+        </div>
+        <form id="loginForm">
+        <div class="box-2">
+          <div class="row">
+            <div class="container">
+              <label for="fName">FIRST NAME</label>
+              <input type="text" name="fName" placeholder="John" required/>
+            </div>
+
+            <div class="container">
+              <label for="lName">LAST NAME</label>
+              <input type="text" name="lName" placeholder="Doe" required/>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="container">
+              <label for="email">EMAIL</label>
+              <input type="email" name="email" placeholder="Johndoe69@mail.com" required/>
+            </div>
+
+            <div class="container">
+              <label for="phoneNumber">PHONE NUMBER</label>
+              <input type="tel" name="phoneNumber" placeholder="9145657545" minlength="10" maxlength="10" pattern="\d{10}"/>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="container">
+              <label for="password">PASSWORD</label>
+              <input type="password" name="password" required pattern=".{8}" id="password" value=""/>
+            </div>
+
+            <div class="container">
+              <label for="confirmPassword">CONFIRM PASSWORD</label>
+              <input type="password" name="confirmPassword" required  id="confirmPassword" value=""/>
+              <span id="error_message" class="error">Passwords do not match</span>
+            </div>
+          </div>
+          <input type="submit" value="signup" id="submit">
+          <span>Already have an account? <a href="#">Log in</a></span>
+        </form>
+        </div>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>

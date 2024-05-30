@@ -1,0 +1,127 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'Norse';
+    src: url("./NorseBold-2Kge.otf");
+}
+
+.flex-container {
+    display: flex;
+    height: 100vh;
+}
+
+.left-side {
+    background-image: url("./bg_image.jpg");
+    background-size: cover;
+    width: 460.8px;
+}
+
+.logo {
+    height: 100px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-top: 234px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Norse';
+    font-size: 4.65rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+}
+
+.logo img {
+    height: 100%;
+}
+
+
+/* right side */
+.right-side {
+    width: 1075px;
+}
+
+h3 {
+    width: 773px;
+    font-size: 1.2rem;
+    font-family: 'Inter', sans-serif;
+}
+
+#you-know {
+    margin-top: 54px;
+}
+
+.box-1 {
+    padding-left: 32.25px;
+    padding-right: 16px;
+    padding-top: 51px;
+    padding-bottom: 41px;
+    background-color: hsl(160, 100%, 96%);
+
+}
+
+.box-2 {
+    padding-left: 32.25px;
+    padding-right: 16px;
+    padding-top: 41px;
+    padding-bottom: 41px;
+    /* background-color: blueviolet; */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    gap: 50px;
+    padding-bottom: 20px;
+}
+
+label {
+    padding-bottom: 5px;
+}
+
+input {
+    height: 30px;
+    width: 400px;
+    font-size: 1.2rem;
+}
+
+#submit {
+    height: 50px;
+    width: 100px;
+    background-color: #596D48;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    display: block;
+    margin-bottom: 30px;
+    box-shadow: 2px 2px 8px hsl(92, 20%, 25%);
+}
+
+#submit:hover {
+    cursor: pointer;
+}
+
+span {
+    font-size: 1.2rem;
+}
+
+a {
+    text-decoration: none;
+    color: #596D48;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.error {
+    color: red;
+    display: none;
+}
